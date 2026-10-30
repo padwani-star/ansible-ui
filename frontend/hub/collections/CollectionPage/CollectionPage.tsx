@@ -367,9 +367,6 @@ export function CollectionPage() {
                       onClick={() => {
                         context.setOpen(false);
                         singleSelectorBrowser?.((selection) => {
-                          setCollection({
-                            collection_version: { version: selection },
-                          } as Partial<CollectionVersionSearch>);
                           setVersionParams({
                             collection_version: { version: selection },
                           } as Partial<CollectionVersionSearch>);
